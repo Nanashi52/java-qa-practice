@@ -1,29 +1,29 @@
 # Java QA Practice
 
-Учебный проект — демонстрация навыков модульного тестирования на Java с использованием JUnit 5.
+Educational project demonstrating unit testing skills in Java with JUnit 5.
 
-## Стек
+## Stack
 
 - Java 17
 - JUnit 5
 - Maven
 
-## Покрытие тестами
+## Test Coverage
 
-| Класс | Описание | Тестов |
-|-------|----------|--------|
-| `Calculator` | Арифметические операции, проверки чётности, факториал | 11 |
-| `StringUtils` | Палиндромы, подсчёт гласных, реверс, truncate | 12 |
-| `UserValidator` | Валидация email, паролей, возраста, username | 11 |
+| Class | Description | Tests |
+|-------|-------------|-------|
+| `Calculator` | Arithmetic operations, even checks, factorial | 23 |
+| `StringUtils` | Palindromes, vowel counting, reverse, truncate | 21 |
+| `UserValidator` | Email, password, age, username validation | 33 |
 
-## Используемые подходы
+## Approaches Used
 
-- Параметризованные тесты (`@ParameterizedTest`, `@CsvSource`, `@ValueSource`)
-- Тестирование исключений (`assertThrows`)
-- Именование тестов через `@DisplayName`
-- Граничные значения и негативные сценарии
+- Parameterized tests (`@ParameterizedTest`, `@CsvSource`, `@ValueSource`)
+- Exception testing (`assertThrows`)
+- Display names via `@DisplayName`
+- Boundary values and negative scenarios
 
-## Запуск
+## Run
 
 ```bash
 mvn test
